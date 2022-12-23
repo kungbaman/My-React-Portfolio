@@ -1,0 +1,53 @@
+.container.motivations__container {
+    width: 30%;
+    padding-bottom: 4rem;
+}
+
+.personal__avatar {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+
+.motivation {
+    background: var(--color-bg-variant);
+    text-align: center;
+    /* border: 2px solid red; */
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
+}
+
+.personal__speech {
+    color: var(--color-light);
+    font-weight: 300;
+    display: block;
+    width: 80%;
+    margin: 0.8rem auto 0;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background: var(--color-primary);
+    width: 10px;
+    height: 10px;
+}
+
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) ============= */
+@media screen and (max-width: 1024px) {
+    .container.motivations__container {
+        width: 60%;
+    }
+}
+
+/* ============= MEDIA QUERIES (SMALL DEVICES) ============= */
+@media screen and (max-width: 600px) {
+    .container.motivations__container {
+        width: var(--container-width-sm);
+    }
+    .personal__speech {
+        width: var(--container-width-sm);
+    }
+}
